@@ -15,4 +15,9 @@ public class BookingManager
 
     //TODO implement functionality as per specification
 
+    /*public addBooking()
+    {
+        //check valid passenger & vehicle id
+        //
+    }*/
 }

@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 /**
  * This Vehicle Bookings Management Systems manages the booking of Vehicles
  * by Passengers.
@@ -22,7 +24,6 @@ public class App
     public static void main(String[] args)
     {
         System.out.println("\nWelcome to the VEHICLE BOOKINGS MANAGEMENT SYSTEM - CA1 for OOP\n");
-
         // create PassengerStore and load it with passenger records from text file
         PassengerStore passengerStore = new PassengerStore("passengers.txt");
         System.out.println("List of all passengers:");

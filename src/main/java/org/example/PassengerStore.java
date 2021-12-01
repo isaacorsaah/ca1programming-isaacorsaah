@@ -25,6 +25,23 @@ public class PassengerStore {
         }
     }
 
+    public Passenger findPassengerByName(String name)
+    {
+        for(Passenger p : this.passengerList)
+        {
+            if(name.equals((p.getName())))
+            {
+                System.out.println(p);
+            }
+        }
+        return null;
+    }
+
+    public void addPassenger(Passenger p) {
+        passengerList.add(new Passenger(p.getName(), p.getEmail(), p.getPhone(), p.getLocation().getLatitude(), p.getLocation().getLongitude()));
+        passengerList.add(p);
+    }
+
     /**
      * Read Passenger records from a text file and create and add Passenger
      * objects to the PassengerStore.
